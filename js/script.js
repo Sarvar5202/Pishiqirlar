@@ -358,14 +358,8 @@ if (submitFeedback) {
             ratingThanks.style.display = 'none';
         }, 5000);
         
-        // Send to server
-        fetch('/api/rating', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(ratingData)
-        }).catch(err => {
-            console.log('Rating serverga yuborilmadi, lekin saqlandi:', err);
-        });
+        // Save to localStorage only (no backend needed)
+        // Rating faqat localStorage da saqlanadi
     });
 }
 
