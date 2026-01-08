@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "echo 'No build needed'"
+    "build": "echo 'No build needed'",
+    "vercel-build": "echo 'Vercel build completed'"
   },
   "keywords": [
     "pishiriqlar",
