@@ -389,4 +389,11 @@ window.addEventListener('load', () => {
     }
 });
 
-console.log('🍰 Pishiriqlar sayti yuklandi!');
+// Ensure all scripts run after DOM is loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('🍰 Pishiriqlar sayti yuklandi!');
+    });
+} else {
+    console.log('🍰 Pishiriqlar sayti yuklandi!');
+}
